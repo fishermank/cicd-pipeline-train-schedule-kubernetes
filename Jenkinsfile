@@ -9,7 +9,6 @@ pipeline {
             steps {
                 echo 'Echo user'
                 sh 'whoami; groups `whoami`'
-                archiveArtifacts artifacts: 'dist/trainSchedule.zip'
             }
         }
         stage('Build') {
